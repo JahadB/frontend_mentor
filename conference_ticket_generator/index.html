@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Conference ticket generator</title>
+
+</head>
+<body background="./assets/images/background-desktop.png">
+
+  
+  <p class="title">Your Journey to Coding Conf <br> 2025 Starts Here!</p>
+  
+  <p class="subtitle">Secure your spot at next year's biggest coding conference.</p>
+  
+  <!-- Form starts -->
+  <form>
+    <div class="imageUpload section">
+      <label for="avatar">Upload Avatar</label> 
+      <div class="dropZoneOverlay">
+        <img id = "upload"src="assets\images\icon-upload.svg" alt="Upload photo">
+        
+        <p>Drag and drop your image here</p>
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+      </div>
+
+      <p class="infotag"><img src="assets\images\icon-info.svg" alt="Info Icon" style="margin: auto;">Upload your photo (JPG or PNG, max size: 500KB).</p>
+  
+    </div>
+
+    <div class="name section">
+      <label for="fullname">Full Name</label> 
+      
+      <input type="text" class="input" id = "fullName" name = "fullName" required>
+    </div>
+
+    <div class="email section">
+      <label for="email">Email Address</label> 
+      
+      <input type="email" class="input" id = "email" name = "email" placeholder="example@email.com" required>
+    </div>
+
+    <div class="github section">
+      <label for="github">GitHub Username</label> 
+      
+      <input type="text" class="input" id = "githubUser" name = "githubUser" placeholder="@yourusername" required>
+    </div>
+
+    <button type="submit section" id="submitBtn">Generate My Ticket</button>
+  </form>
+
+  <!-- Form ends -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Bajax</a>.
+  </div>
+</body>
+</html>
