@@ -4,39 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles.css">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+
+  <script src="../script.js" defer></script>
+   
   <title>Frontend Mentor | Conference ticket generator</title>
 
 </head>
-<body background="./assets/images/background-desktop.png">
+<body>
+  <div class="pattern-lines">
+  </div>
 
+  <div class="header">
+    <img id="logo" src="../assets/images/logo-full.svg">
+    <p class="title">Your Journey to Coding Conf <br> 2025 Starts Here!</p>
   
-  <p class="title">Your Journey to Coding Conf <br> 2025 Starts Here!</p>
-  
-  <p class="subtitle">Secure your spot at next year's biggest coding conference.</p>
-  
+    <p class="subtitle">Secure your spot at next year's biggest coding conference.</p>
+  </div>
   <!-- Form starts -->
   <form>
     <div class="imageUpload section">
       <label for="avatar">Upload Avatar</label> 
       <div class="dropZoneOverlay">
-        <img id = "upload"src="assets\images\icon-upload.svg" alt="Upload photo">
+        <img id = "upload"src="../assets/images/icon-upload.svg" alt="Upload photo">
         
         <p>Drag and drop your image here</p>
         <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
       </div>
 
-      <p class="infotag"><img src="assets\images\icon-info.svg" alt="Info Icon" style="margin: auto;">Upload your photo (JPG or PNG, max size: 500KB).</p>
+      <p class="infotag"><img src="../assets/images/icon-info.svg" alt="Info Icon" style="margin: auto;">Upload your photo (JPG or PNG, max size: 500KB).</p>
   
     </div>
 
     <div class="name section">
       <label for="fullname">Full Name</label> 
       
-      <input type="text" class="input" id = "fullName" name = "fullName" required>
+      <input type="text" class="input" id = "fullname" name = "fullname" required>
     </div>
 
     <div class="email section">
@@ -46,12 +51,12 @@
     </div>
 
     <div class="github section">
-      <label for="github">GitHub Username</label> 
+      <label for="githubUser">GitHub Username</label> 
       
       <input type="text" class="input" id = "githubUser" name = "githubUser" placeholder="@yourusername" required>
     </div>
 
-    <button type="submit section" id="submitBtn">Generate My Ticket</button>
+    <button type="submit" class="section" id="submitBtn">Generate My Ticket</button>
   </form>
 
   <!-- Form ends -->
