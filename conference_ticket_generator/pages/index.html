@@ -31,7 +31,7 @@
         <img id = "upload"src="../assets/images/icon-upload.svg" alt="Upload photo">
         
         <p>Drag and drop your image here</p>
-        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" required>
       </div>
 
       <p class="infotag"><img src="../assets/images/icon-info.svg" alt="Info Icon" style="margin: auto;">Upload your photo (JPG or PNG, max size: 500KB).</p>
@@ -39,27 +39,44 @@
     </div>
 
     <div class="name section">
-      <label for="fullname">Full Name</label> 
-      
+      <label for="fullname">Full Name</label>  
       <input type="text" class="input" id = "fullname" name = "fullname" required>
     </div>
 
     <div class="email section">
-      <label for="email">Email Address</label> 
-      
+      <label for="email">Email Address</label>    
       <input type="email" class="input" id = "email" name = "email" placeholder="example@email.com" required>
     </div>
 
     <div class="github section">
-      <label for="githubUser">GitHub Username</label> 
-      
+      <label for="githubUser">GitHub Username</label>    
       <input type="text" class="input" id = "githubUser" name = "githubUser" placeholder="@yourusername" required>
     </div>
 
     <button type="submit" class="section" id="submitBtn">Generate My Ticket</button>
   </form>
-
   <!-- Form ends -->
+
+
+
+  <div class = "ticket">
+    <div style="padding: 20px;">
+    <img id="logo" src="../assets/images/logo-full.svg">
+    <p>Jan 31, 2025 / Ankara, Turkey</p>
+
+    <div class="profile">
+      <img src="../assets/images/logo-mark.svg" alt="profilePhoto">
+      <p>Full name</p>
+      <p>Github Account</p>
+    </div>
+</div>
+
+    <p style="writing-mode: vertical-rl;">random ticket number</p>
+  </div>
+
+
+
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Bajax</a>.
